@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "340451891833",
+    "project_id": "flutterqueuenotificationapp",
+    "storage_bucket": "flutterqueuenotificationapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340451891833:android:6594eb865c84c33a4592a8",
+        "android_client_info": {
+          "package_name": "com.example.flutter_queue_notifier_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAocCmpmmx1-_A6nYxlCBYMYvd0LcE1yNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

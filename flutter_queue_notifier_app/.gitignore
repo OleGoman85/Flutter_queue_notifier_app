@@ -1,0 +1,61 @@
+# =============================
+# ❌ General ignored files
+# =============================
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+Thumbs.db
+*.lock
+
+# =============================
+# ❌ IDE-specific
+# =============================
+.idea/
+*.iml
+*.ipr
+*.iws
+.atom/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# =============================
+# ❌ Dart/Flutter
+# =============================
+.packages
+.dart_tool/
+.pub-cache/
+.pub/
+/build/
+.build/
+.buildlog
+generated_plugin_registrant.dart
+
+# Flutter iOS artifacts
+**/ios/Flutter/.last_build_id
+
+# Flutter doc outputs
+**/doc/api/
+
+# Android Studio build artifacts
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Flutter plugins
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# =============================
+# ❌ Firebase & Secrets
+# =============================
+GoogleService-Info.plist  # iOS config
+*.keystore                # Android key
+*.jks                     # Java key
+
+# Firebase symbol/obfuscation files
+app.*.symbols
+app.*.map.json
