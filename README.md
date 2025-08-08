@@ -43,3 +43,9 @@ dependencies:
   dropdown_search: ^5.0.6
   firebase_auth: ^6.0.0
   flutter_local_notifications: ^19.4.0
+
+![image alt](https://github.com/OleGoman85/Flutter_queue_notifier_app/blob/main/flutter_queue_notifier_app/1.png?raw=true)
+![image alt](https://github.com/OleGoman85/Flutter_queue_notifier_app/blob/main/flutter_queue_notifier_app/2.png?raw=true)
+![image alt](https://github.com/OleGoman85/Flutter_queue_notifier_app/blob/main/flutter_queue_notifier_app/3.png?raw=true)
+![image alt](https://github.com/OleGoman85/Flutter_queue_notifier_app/blob/main/flutter_queue_notifier_app/4.png?raw=true)
+![image alt](https://github.com/OleGoman85/Flutter_queue_notifier_app/blob/main/flutter_queue_notifier_app/5.png?raw=true)
