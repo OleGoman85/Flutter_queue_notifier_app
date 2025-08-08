@@ -41,3 +41,7 @@ dependencies:
   dropdown_search: ^5.0.6
   firebase_auth: ^6.0.0
   flutter_local_notifications: ^19.4.0
+
+<img width="395" height="837" alt="Снимок экрана 2025-08-08 в 13 51 19" src="https://github.com/user-attachments/assets/24dbd2cb-7ed0-4621-b447-733e21d7b659" />
+<img width="395" height="837" alt="Снимок экрана 2025-08-08 в 13 51 48" src="https://github.com/user-attachments/assets/a15b0d6b-75a6-4671-b13d-92b4407a6a43" />
+<img width="395" height="837" alt="Снимок экрана 2025-08-08 в 13 52 43" src="https://github.com/user-attachments/assets/32b71f55-acf9-40c7-a2f6-98c7a46cde73" />
