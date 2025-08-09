@@ -45,5 +45,22 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+    </array>
+    <key>FirebaseAppDelegateProxyEnabled</key>
+    <false/>
+    <key>UNUserNotificationCenter</key>
+    <dict>
+        <key>UNNotificationCategories</key>
+        <array/>
+    </dict>
+    <!-- Optional: Explicit permission requests for iOS 10+ -->
+    <key>NSUserNotifications</key>
+    <dict>
+        <key>UNNotificationCategories</key>
+        <array/>
+    </dict>
 </dict>
 </plist>

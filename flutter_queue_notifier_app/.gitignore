@@ -48,6 +48,7 @@ generated_plugin_registrant.dart
 # Flutter plugins
 .flutter-plugins
 .flutter-plugins-dependencies
+lib/proverka.dart
 
 # =============================
 # ❌ Firebase & Secrets

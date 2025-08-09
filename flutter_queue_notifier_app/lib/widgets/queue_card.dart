@@ -33,7 +33,7 @@ class _QueueCardState extends State<QueueCard> {
     }
   }
 
-  /// Starts a timer that counts down every minute and sends a notification if needed
+  /// Starts a timer that counts down every minute, updates currentNumber, and sends a notification if needed
   void _startTimer() {
     _timer = Timer.periodic(const Duration(minutes: 1), (timer) {
       if (!mounted) {
@@ -44,11 +44,20 @@ class _QueueCardState extends State<QueueCard> {
       setState(() {
         if (_remainingMinutes > 0) {
           _remainingMinutes--;
+          widget.queue.updateCurrentNumber(
+            _remainingMinutes,
+          ); // Update currentNumber
 
           // Notify the user if only 5 people are left
           if (widget.queue.remainingCount <= 5 && !_notificationSent) {
             _sendNotification();
             _notificationSent = true;
+          }
+
+          // Remove the card if the queue is done
+          if (widget.queue.isDone) {
+            widget.onDelete();
+            timer.cancel();
           }
         } else {
           _timer?.cancel(); // Stop timer when countdown ends

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../main.dart';
 import 'queues_page.dart';
 
 /// This is the initial page where the user selects an institution and enters their queue number
@@ -80,9 +81,8 @@ class _HomePageState extends State<HomePage> {
   /// Saves the user's selected queue to SharedPreferences and navigates to QueuesPage
   void _goToQueuesPage() async {
     if (_selectedInstitutionId != null && _numberController.text.isNotEmpty) {
-      final prefs = await SharedPreferences.getInstance();
-
       final queuesJson = prefs.getString('user_queues');
+
       final List<Map<String, dynamic>> queueData = queuesJson != null
           ? (jsonDecode(queuesJson) as List<dynamic>)
                 .cast<Map<String, dynamic>>()

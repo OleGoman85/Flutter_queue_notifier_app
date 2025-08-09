@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../main.dart';
 import '../models/queue_info.dart';
 import '../widgets/queue_card.dart';
 import 'home_page.dart';
@@ -55,7 +56,6 @@ class _QueuesPageState extends State<QueuesPage> {
       }
       _subscriptions.clear();
 
-      final prefs = await SharedPreferences.getInstance();
       final queuesJson = prefs.getString('user_queues');
       final List<Map<String, dynamic>> queueData = queuesJson != null
           ? (jsonDecode(queuesJson) as List<dynamic>)
@@ -163,7 +163,6 @@ class _QueuesPageState extends State<QueuesPage> {
     bool showSnackBar = true,
   }) async {
     try {
-      final prefs = await SharedPreferences.getInstance();
       final queuesJson = prefs.getString('user_queues');
       final List<Map<String, dynamic>> queueData = queuesJson != null
           ? (jsonDecode(queuesJson) as List<dynamic>)
